@@ -28,3 +28,13 @@ mu.population <- mean(population)
 var.population <- var(population)
 hist(population)
 abline(v=mu.population, col="red", lwd=2)
+
+# Lognormal distribution
+n.population <- 100000
+mean.log.popu <- log(10)
+sdlog.popu <- 1
+population <- rlnorm(n.population, meanlog=mean.log.popu, sdlog=sdlog.popu)
+mu.population <- mean(population)
+var.population <- var(population)
+hist(population)
+abline(v=mu.population, col="red", lwd=2)
