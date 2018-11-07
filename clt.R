@@ -19,3 +19,12 @@ mu.population <- mean(population)
 var.population <- var(population)
 hist(population)
 abline(v=mu.population, col="red", lwd=2)
+
+# Exponential distribution
+n.population <- 100000
+rate.popu <- 0.1
+population <- rexp(n.population, rate.popu)
+mu.population <- mean(population)
+var.population <- var(population)
+hist(population)
+abline(v=mu.population, col="red", lwd=2)
