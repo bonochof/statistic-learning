@@ -38,3 +38,11 @@ mu.population <- mean(population)
 var.population <- var(population)
 hist(population)
 abline(v=mu.population, col="red", lwd=2)
+
+# Cauchy distribution
+n.population <- 100000
+location.popu <- 10
+scale.popu <- 0.5
+population <- rcauchy(n.population, location=location.popu, scale=scale.popu)
+hist(population, freq=F)
+abline(v=mu.population, col="red", lwd=2)
